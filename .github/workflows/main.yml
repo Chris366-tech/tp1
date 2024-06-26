@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: 
+      name: ENG
 
     steps:
       - name: Checkout repository
@@ -16,4 +18,4 @@ jobs:
       - name: Run a one-line script
         run: |
           echo "Ceci est un " ${{ vars.TESTREPO2 }}
-          echo "Env variable : " env.${{ENG.ENV1 }}
+          echo "Env variable : " ${{ vars.TEST }}
