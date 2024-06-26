@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  ENV1: 'ENG'
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,4 +17,4 @@ jobs:
         uses: actions/checkout@v4
     
       - name: Run a one-line script
-        run: echo ${{ ENG:env.TEST }}
+        run: echo ${{ vars.TEST }}
