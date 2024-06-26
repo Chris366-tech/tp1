@@ -16,4 +16,4 @@ jobs:
       - name: Run a one-line script
         run: |
           echo "Ceci est un " ${{ vars.TESTREPO2 }}
-          echo "Env variable : " $vars.ENV1
+          echo "Env variable : " ${{ vars.ENV1 }}
