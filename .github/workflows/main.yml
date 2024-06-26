@@ -14,5 +14,4 @@ jobs:
         uses: actions/checkout@v4
     
       - name: Run a one-line script
-        run: echo ENG:${{ vars.ENV1 }}
-    
+        run: echo ${{ env.ENV1 == 'Monday' }}
