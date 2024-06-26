@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
     
       - name: Run a one-line script
-        run: echo {{ ENG:vars.TEST }}
+        run: echo ${{ ENG.TEST }}
