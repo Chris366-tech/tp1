@@ -15,4 +15,7 @@ jobs:
     
       - name: Run a one-line script
         run: echo "Hello, world to me !!!"
+
+      - name: echo variable
+        run: echo "var : " $TESTREPVAR1
     
