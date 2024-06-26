@@ -14,8 +14,6 @@ jobs:
         uses: actions/checkout@v4
     
       - name: Run a one-line script
-        run: echo "Hello, world to me !!!"
+        run: echo "Hello, world to me !!! + $TESTREPVAR1"
 
-      - name: echo variable
-        run: echo "var : " $TESTREPVAR1
     
