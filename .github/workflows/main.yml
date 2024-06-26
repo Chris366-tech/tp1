@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+
+env:
+    ENV_VAR1: TEST
   
 jobs:
   build:
@@ -14,4 +17,6 @@ jobs:
         uses: actions/checkout@v4
     
       - name: Run a one-line script
-        run: echo "Ceci est un " ${{ vars.TESTREPO2 }}
+        run: |
+          echo "Ceci est un " ${{ vars.TESTREPO2 }}
+          echo "Env variable : " $ENV_VAR1
