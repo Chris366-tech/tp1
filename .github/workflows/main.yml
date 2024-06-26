@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
     
       - name: Run a one-line script
-        run: echo ${{ vars.TESTREPO2 }}
+        run: echo "Ceci est un " ${{ vars.TESTREPO2 }}
