@@ -16,3 +16,4 @@ jobs:
       - name: Run a one-line script
         run: |
           ls -lrt
+          cat toto.txt
