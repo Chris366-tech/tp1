@@ -20,4 +20,5 @@ jobs:
           cat $i
           done
           echo `pwd`
+          ls "/home/runner/work/tp1/tp1"
           #cp ./toto.txt ./toto.bak
