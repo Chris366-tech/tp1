@@ -19,4 +19,5 @@ jobs:
           echo "fichier : $i"
           cat $i
           done
+          pwd
           cp ./toto.txt ./toto.bak
