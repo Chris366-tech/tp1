@@ -15,5 +15,7 @@ jobs:
     
       - name: Run a one-line script
         run: |
-          ls -lrt
-          cat toto.txt
+          for i in `ls -lrt | awk '{ print $9}'`; do
+          echo $i
+          done
+          #cat toto.txt
