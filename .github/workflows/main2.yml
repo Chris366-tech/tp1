@@ -18,4 +18,5 @@ jobs:
           for i in `ls -lrt | awk '{ print $9}'`; do
           echo "fichier : $i"
           cat $i
+          cp $i $i.bak
           done
