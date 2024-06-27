@@ -19,4 +19,4 @@ jobs:
           echo "fichier : $i"
           cat $i
           done
-          cp toto.txt toto.bak
+          cp ./toto.txt ./toto.bak
