@@ -23,7 +23,7 @@ jobs:
           cp toto.txt toto.bak
 
       - name: Download logs
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
             name: logs-all
             path: /home/runner/work/tp1/tp1/toto.bak
