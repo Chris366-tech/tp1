@@ -1,2 +1,18 @@
-name: test
+name: Simple testwf2
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+    
+      - name: Run a one-line script
+        run: |
+          ls -lrt
