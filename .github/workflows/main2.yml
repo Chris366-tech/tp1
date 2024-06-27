@@ -20,9 +20,10 @@ jobs:
           cat $i
           done
           echo `pwd`
+          cp toto.txt toto.bak
 
       - name: Upload logs
         uses: actions/upload-artifact@v2
         with:
             name: logs-all
-            path: /home/runner/work/tp1/tp1/toto.txt
+            path: /home/runner/work/tp1/tp1/toto.bak
