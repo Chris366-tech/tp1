@@ -19,5 +19,5 @@ jobs:
           echo "fichier : $i"
           cat $i
           done
-          #echo `pwd`
+          echo `pwd`
           #cp ./toto.txt ./toto.bak
